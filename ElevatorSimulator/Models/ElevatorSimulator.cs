@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using ElevatorApp.Util;
 
 namespace ElevatorApp.Models
 {
+    [Obsolete]
     public class ElevatorSimulator
     {
         public ElevatorMasterController Controller { get; } = new ElevatorMasterController();
@@ -14,9 +16,5 @@ namespace ElevatorApp.Models
             Logger.LogEvent("Initializing Simulator");
         }
 
-        public void DispatchPassenger(int fromFloor, int toFloor)
-        {
-            
-        }
     }
 }
